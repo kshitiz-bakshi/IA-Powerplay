@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>IA POWERPLAY</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2">
+        <link rel="stylesheet" href="/Theme/css/base.css">
+        <link rel="stylesheet" href="/Theme/css/vendor.css">
+        <link rel="stylesheet" href="/Theme/css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+        <script src="/Theme/js/modernizr.js"></script>
+        <script src="/Theme/js/pace.min.js"></script>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <script nonce="a1b799b5-a3f9-4d59-9a62-463e5e6d8fdb">
+            
+            
+            (function(w, d) {
+                !function(Y, Z, _, ba) {
+                    Y[_] = Y[_] || {};
+                    Y[_].executed = [];
+                    Y.zaraz = {
+                        deferred: [],
+                        listeners: []
+                    };
+                    Y.zaraz.q = [];
+                    Y.zaraz._f = function(bb) {
+                        return function() {
+                            var bc = Array.prototype.slice.call(arguments);
+                            Y.zaraz.q.push({
+                                m: bb,
+                                a: bc
+                            })
+                        }
+                    }
+                    ;
+                    for (const bd of ["track", "set", "debug"])
+                        Y.zaraz[bd] = Y.zaraz._f(bd);
+                    Y.zaraz.init = ()=>{
+                        var be = Z.getElementsByTagName(ba)[0]
+                          , bf = Z.createElement(ba)
+                          , bg = Z.getElementsByTagName("title")[0];
+                        bg && (Y[_].t = Z.getElementsByTagName("title")[0].text);
+                        Y[_].x = Math.random();
+                        Y[_].w = Y.screen.width;
+                        Y[_].h = Y.screen.height;
+                        Y[_].j = Y.innerHeight;
+                        Y[_].e = Y.innerWidth;
+                        Y[_].l = Y.location.href;
+                        Y[_].r = Z.referrer;
+                        Y[_].k = Y.screen.colorDepth;
+                        Y[_].n = Z.characterSet;
+                        Y[_].o = (new Date).getTimezoneOffset();
+                        if (Y.dataLayer)
+                            for (const bk of Object.entries(Object.entries(dataLayer).reduce(((bl,bm)=>({
+                                ...bl[1],
+                                ...bm[1]
+                            })))))
+                                zaraz.set(bk[0], bk[1], {
+                                    scope: "page"
+                                });
+                        Y[_].q = [];
+                        for (; Y.zaraz.q.length; ) {
+                            const bn = Y.zaraz.q.shift();
+                            Y[_].q.push(bn)
+                        }
+                        bf.defer = !0;
+                        for (const bo of [localStorage, sessionStorage])
+                            Object.keys(bo || {}).filter((bq=>bq.startsWith("_zaraz_"))).forEach((bp=>{
+                                try {
+                                    Y[_]["z_" + bp.slice(7)] = JSON.parse(bo.getItem(bp))
+                                } catch {
+                                    Y[_]["z_" + bp.slice(7)] = bo.getItem(bp)
+                                }
+                            }
+                            ));
+                        bf.referrerPolicy = "origin";
+                        bf.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(Y[_])));
+                        be.parentNode.insertBefore(bf, be)
+                    }
+                    ;
+                    ["complete", "interactive"].includes(Z.readyState) ? zaraz.init() : Y.addEventListener("DOMContentLoaded", zaraz.init)
+                }(w, d, "zarazData", "script");
+            }
+            )(window, document);
+        </script>
+    </head>
+    <body id="top">
+        <section class="wrapper">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div id="title">
+            </div>
+        <header class="s-header">
+            <div class="header-logo">
+                <a class="site-logo" href="index.html">
+                    <img src="/Theme/images/logo.png" alt="Homepage">
+                </a>
+            </div>
+            <nav class="header-nav">
+                <a href="#0" class="header-nav__close" title="close">
+                    <span>Close</span>
+                </a>
+                <div class="header-nav__content">
+                    <h3>Navigation</h3>
+                    <ul class="header-nav__list">
+                        <li class="current">
+                            <a class="smoothscroll" href="#home" title="home">Home</a>
+                        </li>
+                        <li>
+                            <a class="smoothscroll" href="#about" title="about">About</a>
+                        </li>
+                        <li>
+                            <a class="smoothscroll" href="#services" title="services">Services</a>
+                        </li>
+                        <li>
+                            <a class="smoothscroll" href="#works" title="works">Works</a>
+                        </li>
+                        <li>
+                            <a class="smoothscroll" href="#clients" title="clients">Clients</a>
+                        </li>
+                        <li>
+                            <a class="smoothscroll" href="#contact" title="contact">Contact</a>
+                        </li>
+                    </ul>
+                  
+                    <ul class="header-nav__social">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-behance"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-dribbble"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="header-menu-toggle" href="#0">
+                <span class="header-menu-text">Menu</span>
+                <span class="header-menu-icon"></span>
+            </a>
+        </header>
+        </section>
+        <section id="home" class="s-home target-section" data-parallax="scroll" data-position-y=center>
+            <div class="overlay"></div>
+            <div class="shadow-overlay"></div>
+            <div class="home-content">
+                <div class="row home-content__main">
+                    <h3>Welcome to IA POWERPLAY</h3>
+                    <h1>
+                        We are a creative group <br>
+                        of people who design <br>
+                        influential brands and <br>digital experiences.
+                    </h1>
+                    <div class="home-content__buttons">
+                        <a href="#contact" class="smoothscroll btn btn--stroke">Get in touch </a>
+                        <a href="#about" class="smoothscroll btn btn--stroke">More About Us </a>
+                    </div>
+                </div>
+                <div class="home-content__scroll">
+                    <a href="#about" class="scroll-link smoothscroll">
+                        <span>Scroll Down</span>
+                    </a>
+                </div>
+                <div class="home-content__line"></div>
+            </div>
+            <ul class="home-social">
+                <li>
+                    <a href="#0">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span>Twiiter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <i class="fa fa-behance" aria-hidden="true"></i>
+                        <span>Behance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                        <span>Dribbble</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id='about' class="s-about">
+            <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead subhead--dark">Hello There</h3>
+                    <h1 class="display-1 display-1--light">We Are IA PowerPlay</h1>
+                </div>
+            </div>
+            <div class="row about-desc" data-aos="fade-up">
+                <div class="col-full">
+                    <p>IA PowerPlay, backed by India Accelerator, is a gaming startup accelerator program that will provide support and resources to early-stage gaming companies to help them grow and succeed. It will offer mentorship, funding, networking opportunities, and access to industry experts and resources.
+                      <br> <br>✔️ The gaming industry is constantly evolving, and a startup accelerator can help new gaming companies navigate the competitive landscape and overcome common challenges, such as funding and marketing.
+                       <br>✔️ This program can also facilitate connections between startups and investors, helping them to secure additional funding to further their growth..</p>
+                </div>
+            </div>
+            <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                <div class="col-block stats__col ">
+                    <div class="stats__count "> <span class="stats__count1">200</span>  <span class="stats__count">+</span></div>
+                    <h5>Startups in portfolio</h5>
+                </div>
+                <div class="col-block stats__col">
+                    <div class="stats__count "> <span class="stats__count1">400</span>  <span class="stats__count">Cr+</span></div>
+                    <h5>Total valuation IAs Portfolio</h5>
+                </div>
+                <div class="col-block stats__col">
+                    <div class="stats__count "> <span class="stats__count1">1500</span>  <span class="stats__count">+</span></div>
+                    <h5>Angel investors</h5>
+                </div>
+                <div class="col-block stats__col">
+                    <div class="stats__count "> <span class="stats__count1">20</span>  <span class="stats__count">Cr+</span></div>
+                    
+                    <h5>Funding raised</h5>
+                </div>
+            </div>
+            <div class="about__line"></div>
+        </section>
+        <section id='services' class="s-services">
+            <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">What We Do</h3>
+                    <h1 class="display-2">Benefits of gaming accelerator in India</h1>
+                </div>
+            </div>
+            <div class="row services-list block-1-2 block-tab-full">
+                <div class="col-block service-item" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="icon-paint-brush"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h2">Growing gaming industry</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
+                    </div>
+                </div>
+                <div class="col-block service-item" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="icon-group"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h2">Access to talent</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
+                    </div>
+                </div>
+                <div class="col-block service-item" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="icon-megaphone"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h2">Government support</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
+                    </div>
+                </div>
+                <div class="col-block service-item" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="icon-earth"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h2">International partnerships</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
+                    </div>
+                </div>
+                <div class="col-block service-item" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="icon-cube"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h2">Right Mentorships</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
+                    </div>
+                </div>
+                <div class="col-block service-item" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="icon-lego-block"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h2">Support in Fund Raising</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='works' class="s-works">
+            <div class="intro-wrap">
+                <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                    <div class="col-full">
+                        <h3 class="subhead">Portfolio</h3>
+                        <h1 class="display-2 display-2--light">We love what we do, check out our portfolio companies.</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row works-content">
+                <div class="col-full masonry-wrap">
+                    <div class="masonry">
+                        <div class="masonry__brick" data-aos="fade-up">
+                            <div class="item-folio">
+                                <div class="item-folio__thumb">
+                                    <a href="https://villageresports.in/"  target="_blank" class="thumb-link" title="Villager Gaming" data-size="1050x700">
+                                        <img src="/Theme/images/portfolio/1.png"  alt="">
+                                    </a>
+                                </div>
+                                <div class="item-folio__text">
+                                    <h3 class="item-folio__title">Villager Gaming</h3>
+                                    <p class="item-folio__cat">CURRENT</p>
+                                </div>
+                                <a href="https://villageresports.in/" class="item-folio__project-link" title="Project link">
+                                    <i class="icon-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="masonry__brick" data-aos="fade-up">
+                            <div class="item-folio">
+                                <div class="item-folio__thumb">
+                                    <a href="https://hightournaments.com/" target="_blank"  class="thumb-link" title="High Tournaments" data-size="1050x700">
+                                        <img src="/Theme/images/portfolio/2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-folio__text">
+                                    <h3 class="item-folio__title">Woodcraft</h3>
+                                    <p class="item-folio__cat">Web Design</p>
+                                </div>
+                                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                    <i class="icon-link"></i>
+                                </a>
+                                <div class="item-folio__caption">
+                                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="masonry__brick" data-aos="fade-up">
+                            <div class="item-folio">
+                                <div class="item-folio__thumb">
+                                    <a href="images/portfolio/gallery/g-beetle.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                        <img src="/Theme/images/portfolio/3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-folio__text">
+                                    <h3 class="item-folio__title">The Beetle</h3>
+                                    <p class="item-folio__cat">Web Development</p>
+                                </div>
+                                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                    <i class="icon-link"></i>
+                                </a>
+                                <div class="item-folio__caption">
+                                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="masonry__brick" data-aos="fade-up">
+                            <div class="item-folio">
+                                <div class="item-folio__thumb">
+                                    <a href="images/portfolio/gallery/g-grow-green.jpg" class="thumb-link" title="Grow Green" data-size="1050x700">
+                                        <img src="/Theme/images/portfolio/4.png"  alt="">
+                                    </a>
+                                </div>
+                                <div class="item-folio__text">
+                                    <h3 class="item-folio__title">Grow Green</h3>
+                                    <p class="item-folio__cat">Branding</p>
+                                </div>
+                                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                    <i class="icon-link"></i>
+                                </a>
+                                <div class="item-folio__caption">
+                                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="masonry__brick" data-aos="fade-up">
+                            <div class="item-folio">
+                                <div class="item-folio__thumb">
+                                    <a href="images/portfolio/gallery/g-guitarist.jpg" class="thumb-link" title="Guitarist" data-size="1050x700">
+                                        <img src="/Theme/images/portfolio/5.png"  alt="">
+                                    </a>
+                                </div>
+                                <div class="item-folio__text">
+                                    <h3 class="item-folio__title">Guitarist</h3>
+                                    <p class="item-folio__cat">Web Design</p>
+                                </div>
+                                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                    <i class="icon-link"></i>
+                                </a>
+                                <div class="item-folio__caption">
+                                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="masonry__brick" data-aos="fade-up">
+                            <div class="item-folio">
+                                <div class="item-folio__thumb">
+                                    <a href="images/portfolio/gallery/g-palmeira.jpg" class="thumb-link" title="Palmeira" data-size="1050x700">
+                                        <img src="/Theme/images/portfolio/6.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-folio__text">
+                                    <h3 class="item-folio__title">Palmeira</h3>
+                                    <p class="item-folio__cat">Web Design</p>
+                                </div>
+                                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                    <i class="icon-link"></i>
+                                </a>
+                                <div class="item-folio__caption">
+                                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="clients" class="s-clients">
+            <div class="row section-header" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Our Team</h3>
+                    <h1 class="display-2">We are founders, innovators, experts, and investors from all backgrounds. Our most valuable addition is when we put our minds, skills, and experience together to turn concepts into companies and founders into leaders.</h1>
+                </div>
+            </div>
+            <div class="row clients-outer" data-aos="fade-up">
+                <div class="col-full">
+                    <div class="clients clients-pad">
+                        <a href="#0" title="" class="clients__slide">
+                            <img src="/Theme/images/Team/A.png">
+                        </a>
+                        <a href="#0" title="" class="clients__slide">
+                            <img src="/Theme/images/Team/B.png"/>
+                        </a>
+                        <a href="#0" title="" class="clients__slide">
+                            <img src="/Theme/images/Team/C.png"/>
+                        </a>
+                        <a href="#0" title="" class="clients__slide">
+                            <img src="/Theme/images/Team/c.png"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row clients-testimonials" data-aos="fade-up">
+                <div class="col-full">
+                    <div class="testimonials">
+                        <div class="testimonials__slide" style="font-size: 10px;">
+                            <p>IA handholds the selected startups through the 4-month program, and post that, to help channelize the investment in the most effective way so investors get the bang for their buck.</p>
+                            <img src="/Theme/images/Team/Ashish-150x150.jpeg" alt="ASHISH BHATIA" class="testimonials__avatar">
+                            <div class="testimonials__info">
+                                <span class="testimonials__name">ASHISH BHATIA</span>
+                                <span class="testimonials__pos">Founder & MD, India Accelerator</span>
+                            </div>
+                        </div>
+            </div>
+        </section>
+        <section id="contact" class="s-contact">
+            <div class="overlay"></div>
+            <div class="contact__line"></div>
+            <div class="row section-header" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Contact Us</h3>
+                    <h1 class="display-2 display-2--light">Reach out for queries or just say hello</h1>
+                </div>
+            </div>
+            <div class="row contact-content" data-aos="fade-up">
+                <div class="contact-primary">
+                    <h3 class="h6">Send Us A Message</h3>
+                    <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                        <fieldset>
+                            <div class="form-field">
+                                <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                            </div>
+                            <div class="form-field">
+                                <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                            </div>
+                            <div class="form-field">
+                                <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                            </div>
+                            <div class="form-field">
+                                <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                            </div>
+                            <div class="form-field">
+                                <button class="full-width btn--primary">Submit</button>
+                                <div class="submit-loader">
+                                    <div class="text-loader">Sending...</div>
+                                    <div class="s-loader">
+                                        <div class="bounce1"></div>
+                                        <div class="bounce2"></div>
+                                        <div class="bounce3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="message-warning">Something went wrong. Please try again.</div>
+                    <div class="message-success">
+                        Your message was sent, thank you!<br>
+                    </div>
+                </div>
+                <div class="contact-secondary">
+                    <div class="contact-info">
+                        <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+                        <div class="cinfo">
+                            <h5>Where to Find Us</h5>
+                            <p>
+                                
+                            </p>
+                        </div>
+                        <div class="cinfo">
+                            <h5>Email Us At</h5>
+                            <p>
+                                <a href="devyanshu.kansal@indiaaccelerator.co">devyanshu.kansal@indiaaccelerator.co</a>
+                            </p>
+                        </div>
+                        <div class="cinfo">
+                            <h5>Call Us At</h5>
+                            <p>
+                                Phone: +91-8383820253<br>
+                            </p>
+                        </div>
+                        <ul class="contact-social">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-behance" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            
+            <div class="row footer-bottom">
+                <div class="col-twelve">
+                    <div class="copyright">
+                        <span>© Copyright IA PowerPlay</span>
+                        <span>
+                            Powered by <a href="https://www.indiaaccelerator.co/" target="_blank" rel="nofollow noopener">India Accelerator</a>
+                        </span>
+                    </div>
+                    <div class="go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top">
+                            <i class="icon-arrow-up" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="preloader">
+            <div id="loader">
+                <div class="line-scale-pulse-out">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="/Theme/js/jquery-3.6.1.min.js"></script>
+        <script src="/Theme/js/plugins.js"></script>
+        <script src="/Theme/js/main.js"></script>
+        <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996" integrity="sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==" data-cf-beacon='{"rayId":"7ba4fb610b1e84c5","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.3.0","si":100}' crossorigin="anonymous"></script>
+    </body>
+</html>
