@@ -1,8 +1,5 @@
 /* =================================================================== 
- *
- *  Glint v1.0 Main Stylesheet
- *  11-20-2017
- *  ------------------------------------------------------------------
+ *-----------------------------------------
  *
  *  TOC:
  *  # base style overrides
@@ -3399,7 +3396,7 @@ box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #194c90, 0 0 0.8rem #194c
 @media only screen and (max-width: 600px) {
     .clients-pad{
         padding: 30px;
-        margin-left: 5rem;
+        margin-left: 1rem;
      }
     .s-clients {
         padding-top: 12rem;
@@ -3413,22 +3410,17 @@ box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #194c90, 0 0 0.8rem #194c
     .clients-testimonials .testimonials p {
         font-size: 2rem;
     }
-     .clients-outer {
+    .clients-outer {
         
         margin-left: 0rem;
     }
-}
 }
 
 @media only screen and (max-width: 400px) {
     .clients-testimonials .testimonials p {
         font-size: 1.9rem;
+
     }
-     .clients-outer {
-        
-        margin-left: 0rem;
-    }
-}
 }
 
 
