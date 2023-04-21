@@ -3413,12 +3413,22 @@ box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #194c90, 0 0 0.8rem #194c
     .clients-testimonials .testimonials p {
         font-size: 2rem;
     }
+     .clients-outer {
+        
+        margin-left: 0rem;
+    }
+}
 }
 
 @media only screen and (max-width: 400px) {
     .clients-testimonials .testimonials p {
         font-size: 1.9rem;
     }
+     .clients-outer {
+        
+        margin-left: 0rem;
+    }
+}
 }
 
 
